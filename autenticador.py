@@ -1,4 +1,4 @@
-import config
+# import config
 import tweepy
 from os import environ
 
@@ -39,5 +39,5 @@ def api_v2_oauth1():
 
 def api_v2_oauth2():
     """ API V2 - OAuth 2.0 Bearer Token (App-Only) """
-    client = tweepy.Client(config.BEARER_TOKEN)
+    client = tweepy.Client(BEARER_TOKEN)
     return client
